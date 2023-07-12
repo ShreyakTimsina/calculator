@@ -25,7 +25,6 @@ class Calculator {
   }
 
   updateDisplay() {
-    console.log('display update');
     this.currentOperandTextElement.innerText = this.currentOperand;
     this.previousOperandTextElement.innerText = this.previousOperand;
   }
@@ -78,7 +77,6 @@ const calculator = new Calculator(
 );
 
 numberButtons.forEach((button) => {
-  console.log('number clicked');
   button.addEventListener('click', () => {
     calculator.appendNumber(button.innerText);
     calculator.updateDisplay();
